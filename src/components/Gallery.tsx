@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 
 const photos = [
   {
-    url: "/photos/couple/02.jpeg",
+    url: "/photos/couple/02.jpg",
     caption: ""
   },
   {
-    url: "/photos/couple/03.jpeg",
+    url: "/photos/couple/03.jpg",
     caption: ""
   },
   {
-    url: "/photos/couple/04.jpeg",
+    url: "/photos/couple/04.jpg",
     caption: ""
   },
   {
-    url: "/photos/couple/05.jpeg",
+    url: "/photos/couple/05.jpg",
     caption: "Nosso Mcdonalds de cada dia!"
   },
   {
@@ -22,7 +22,7 @@ const photos = [
     caption: "Indo tomar nosso milky muu!"
   },
   {
-    url: "/photos/couple/11.jpeg",
+    url: "/photos/couple/11.jpg",
     caption: "Piquinique no parque com ela!"
   },
 ];
