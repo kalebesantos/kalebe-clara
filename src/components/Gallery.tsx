@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const photos = [
   {
-    url: "../public/photos/couple/02.jpeg",
+    url: "/photos/couple/02.jpeg",
     caption: ""
   },
   {
