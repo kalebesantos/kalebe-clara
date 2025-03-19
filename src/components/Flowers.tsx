@@ -3,23 +3,23 @@ import { Calendar } from 'lucide-react';
 
 const flowers = [
   {
-    url: "/public/photos/flowers/01 08-10-24.JPEG",
+    url: "/photos/flowers/01 08-10-24.JPEG",
     caption: "08/10/24"
   },
   {
-    url: "/public/photos/flowers/02 19-11-24.JPEG",
+    url: "/photos/flowers/02 19-11-24.JPEG",
     caption: "19/11/24"
   },
   {
-    url: "/public/photos/flowers/03 21-12-24.png",
+    url: "/photos/flowers/03 21-12-24.png",
     caption: "21/12/24"
   },
   {
-    url: "/public/photos/flowers/04 24-01-25.png",
+    url: "/photos/flowers/04 24-01-25.png",
     caption: "24/01/25"
   },
   {
-    url: "/public/photos/flowers/05 11-03-25.png",
+    url: "/photos/flowers/05 11-03-25.png",
     caption: "11/03/25"
   }
 ];
