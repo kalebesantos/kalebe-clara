@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const photos = [
   {
-    url: "/photos/couple/02.JPEG",
+    url: "/photos/couple/01.JPEG",
     caption: ""
   },
   {
@@ -15,15 +15,15 @@ const photos = [
   },
   {
     url: "/photos/couple/05.JPEG",
-    caption: "Nosso Mcdonalds de cada dia!"
+    caption: ""
   },
   {
     url: "/photos/couple/07.jpg",
-    caption: "Indo tomar nosso milky muu!"
+    caption: ""
   },
   {
     url: "/photos/couple/11.JPEG",
-    caption: "Piquinique no parque com ela!"
+    caption: ""
   },
 ];
 
