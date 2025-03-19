@@ -22,7 +22,7 @@ const photos = [
     caption: ""
   },
   {
-    url: "",
+    url: "/photos/couple/06.JPEG",
     caption: ""
   },
 ];
