@@ -8,7 +8,7 @@ const flowers = [
   },
   {
     url: "/public/photos/flowers/02 19-11-24.JPEG",
-    caption: "02 19/11/24"
+    caption: "19/11/24"
   },
   {
     url: "/public/photos/flowers/03 21-12-24.png",
