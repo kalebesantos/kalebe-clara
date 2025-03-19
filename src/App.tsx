@@ -52,7 +52,7 @@ function App() {
                 Kalebe & Clara
               </h1>
               <p className="text-2xl sm:text-3xl text-rose-600 font-light mb-4">Nossa História de Amor</p>
-              <p className="text-lg sm:text-xl text-gray-600 mb-2">Namorando desde</p>
+              <p className="text-lg sm:text-xl text-gray-600 mb-2">Namorando desdeeee</p>
               <p className="text-2xl sm:text-3xl font-bold text-rose-600 mb-6 sm:mb-8">05/11/2024</p>
               
               {/* Hero Image */}
