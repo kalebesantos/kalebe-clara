@@ -52,13 +52,13 @@ function App() {
                 Kalebe & Clara
               </h1>
               <p className="text-2xl sm:text-3xl text-rose-600 font-light mb-4">Nossa História de Amor</p>
-              <p className="text-lg sm:text-xl text-gray-600 mb-2">Namorando desdeeee</p>
+              <p className="text-lg sm:text-xl text-gray-600 mb-2">Namorando desde</p>
               <p className="text-2xl sm:text-3xl font-bold text-rose-600 mb-6 sm:mb-8">05/11/2024</p>
               
               {/* Hero Image */}
               <div className="relative rounded-2xl overflow-hidden mb-8 sm:mb-12 shadow-xl">
                 <img 
-                  src="../public/photos/couple/01.jpeg"
+                  src="../public/photos/couple/01.JPEG"
                   alt="Kalebe e Clara"
                   className="w-full h-[300px] sm:h-[500px] object-cover"
                 />
