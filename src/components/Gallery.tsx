@@ -3,27 +3,27 @@ import React, { useState } from 'react';
 const photos = [
   {
     url: "/photos/couple/01.JPEG",
-    caption: "1"
+    caption: ""
   },
   {
     url: "/photos/couple/02.JPEG",
-    caption: "2"
+    caption: ""
   },
   {
     url: "/photos/couple/03.jpg",
-    caption: "3"
+    caption: ""
   },
   {
     url: "/photos/couple/04.JPEG",
-    caption: "4"
+    caption: ""
   },
   {
     url: "/photos/couple/05.JPEG",
-    caption: "5"
+    caption: ""
   },
   {
     url: "/photos/couple/06.JPEG",
-    caption: "6"
+    caption: ""
   },
 ];
 
