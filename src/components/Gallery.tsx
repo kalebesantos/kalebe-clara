@@ -10,15 +10,15 @@ const photos = [
     caption: ""
   },
   {
-    url: "",
+    url: "/photos/couple/03.jpg",
     caption: ""
   },
   {
-    url: "",
+    url: "/photos/couple/04.JPEG",
     caption: ""
   },
   {
-    url: "",
+    url: "/photos/couple/05.JPEG",
     caption: ""
   },
   {
