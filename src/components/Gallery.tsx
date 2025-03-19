@@ -6,23 +6,23 @@ const photos = [
     caption: ""
   },
   {
-    url: "../public/photos/couple/03.jpeg",
+    url: "/photos/couple/03.jpeg",
     caption: ""
   },
   {
-    url: "../public/photos/couple/04.jpeg",
+    url: "/photos/couple/04.jpeg",
     caption: ""
   },
   {
-    url: "../public/photos/couple/05.jpeg",
+    url: "/photos/couple/05.jpeg",
     caption: "Nosso Mcdonalds de cada dia!"
   },
   {
-    url: "../public/photos/couple/07.jpg",
+    url: "/photos/couple/07.jpg",
     caption: "Indo tomar nosso milky muu!"
   },
   {
-    url: "../public/photos/couple/11.jpeg",
+    url: "/photos/couple/11.jpeg",
     caption: "Piquinique no parque com ela!"
   },
 ];
