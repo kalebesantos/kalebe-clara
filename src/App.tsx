@@ -58,7 +58,7 @@ function App() {
               {/* Hero Image */}
               <div className="relative rounded-2xl overflow-hidden mb-8 sm:mb-12 shadow-xl">
                 <img 
-                  src="../public/photos/couple/01.JPEG"
+                  src="../public/photos/couple/01.jpeg"
                   alt="Kalebe e Clara"
                   className="w-full h-[300px] sm:h-[500px] object-cover"
                 />
