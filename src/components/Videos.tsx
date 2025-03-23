@@ -5,21 +5,39 @@ function Videos() {
   const videos = [
     {
       src: 'photos/videos/primeiro.MP4',
-      thumbnail: 'photos/videos/primeiro-thum.png',
-      title: "Na casa do meu amoor",
-      date: "Março 2025",
+      thumbnail: 'photos/videos/primeiro-thumb.png',
+      title: "",
+      date: "20 de março de 2025",
     },
     {
       src: 'photos/videos/segundo.MP4',
-      thumbnail: '',
+      thumbnail: 'photos/videos/segundo-thumb.png',
       title: "",
-      date: "",
+      date: "19 de março de 2025",
     },
     {
       src: 'photos/videos/terceiro.MP4',
-      thumbnail: '',
+      thumbnail: 'photos/videos/terceiro-thumb.png',
       title: "",
-      date: "",
+      date: "16 de março de 2025",
+    },
+    {
+      src: 'photos/videos/quarto.MP4',
+      thumbnail: 'photos/videos/quarto-thumb.png',
+      title: "",
+      date: "15 de março de 2025",
+    },
+    {
+      src: 'photos/videos/quinto.MP4',
+      thumbnail: 'photos/videos/quinto-thumb.png',
+      title: "",
+      date: "14 de março de 2025",
+    },
+    {
+      src: 'photos/videos/sexto.MP4',
+      thumbnail: 'photos/videos/sexto-thumb.png',
+      title: "",
+      date: "12 de março de 2025",
     },
   ];
 
