@@ -1,5 +1,5 @@
 //import React, { useState } from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Heart, ChevronRight, Camera, MessageCircleHeart, Flower, Video , Clock} from 'lucide-react';
 import Gallery from './components/Gallery';
 import Declaration from './components/Declaration';
@@ -98,13 +98,11 @@ function App() {
               <p className="text-2xl sm:text-3xl text-rose-600 font-light mb-4">Nossa História de Amor</p>
               <p className="text-lg sm:text-xl text-gray-600 mb-2">Namorando desde</p>
               <p className="text-2xl sm:text-3xl font-bold text-rose-600 mb-6 sm:mb-8">05/11/2024</p>
+              
 
-              <Clock className="h-5 w-5 mr-2" />
               <div className="bg-white bg-opacity-20 rounded-lg px-6 py-3">
-                  <p className="text-xl">
-                    {duration.months} meses e {duration.days} dias de amor
-                  </p>
-                </div>
+                <p className="text-lg sm:text-xl text-gray-600 mb-2">{duration.months} meses e {duration.days} dias de amor</p>
+              </div>
               
               {/* Hero Image */}
               <div className="relative rounded-2xl overflow-hidden mb-8 sm:mb-12 shadow-xl">
