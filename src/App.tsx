@@ -8,6 +8,13 @@ import Videos from './components/Videos';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
+  const [heartFilled, setHeartFilled] = useState(false);
+  const handleMouseEnter = () => {
+    setHeartFilled(true);
+  };
+  const handleMouseLeave = () => {
+    setHeartFilled(false);
+  };
 
   return (
     <div className="min-h-screen bg-rose-50">
@@ -91,6 +98,21 @@ function App() {
         {activeSection === 'declaration' && <Declaration />}
         {activeSection === 'videos' && <Videos />}
       </main>
+
+      {/* Footer */}
+      <footer className="bg-white shadow-md mt-auto">
+          <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 md:flex md:items-center md:justify-between">
+            <div className="flex justify-center space-x-6 md:order-2">
+              <Heart onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} fill={heartFilled ? 'red' : 'none'} stroke="red" style={{ transition: 'fill 0.3s ease', cursor: 'pointer' }} className="h-5 w-5 text-pink-500" />
+            </div>
+            <div className="mt-4 md:mt-0 md:order-1 text-center md:text-left">
+              <p className="text-sm text-gray-500">
+                © {new Date().getFullYear()} Desenvolvido com amor por{' '}
+                <span className="text-pink-600 font-semibold">Kalebe Santos</span>
+              </p>
+            </div>
+          </div>
+        </footer>
     </div>
   );
 }
