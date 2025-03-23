@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import { Heart, ChevronRight, Camera, MessageCircleHeart, Flower } from 'lucide-react';
+//import React, { useState } from 'react';
+import { useState } from 'react';
+import { Heart, ChevronRight, Camera, MessageCircleHeart, Flower, Video } from 'lucide-react';
 import Gallery from './components/Gallery';
 import Declaration from './components/Declaration';
 import Flowers from './components/Flowers';
+import Videos from './components/Videos';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -37,6 +39,13 @@ function App() {
                 className={`flex items-center gap-1 ${activeSection === 'declaration' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
               >
                 <MessageCircleHeart className="w-4 h-4" /> Declaração
+              </button>
+
+              <button 
+                onClick={() => setActiveSection('videos')}
+                className={`flex items-center gap-1 ${activeSection === 'videos' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
+              >
+                <Video className="w-4 h-4" /> Videos
               </button>
             </div>
           </div>
@@ -80,6 +89,7 @@ function App() {
         {activeSection === 'gallery' && <Gallery />}
         {activeSection === 'flowers' && <Flowers />}
         {activeSection === 'declaration' && <Declaration />}
+        {activeSection === 'videos' && <Videos />}
       </main>
     </div>
   );
