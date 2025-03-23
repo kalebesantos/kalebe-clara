@@ -1,6 +1,6 @@
 //import React, { useState } from 'react';
 import { useState } from 'react';
-import { Heart, ChevronRight, Camera, MessageCircleHeart, Flower, Video } from 'lucide-react';
+import { Heart, ChevronRight, Camera, MessageCircleHeart, Flower, Video , Clock} from 'lucide-react';
 import Gallery from './components/Gallery';
 import Declaration from './components/Declaration';
 import Flowers from './components/Flowers';
@@ -8,6 +8,7 @@ import Videos from './components/Videos';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
+
   const [heartFilled, setHeartFilled] = useState(false);
   const handleMouseEnter = () => {
     setHeartFilled(true);
@@ -15,6 +16,33 @@ function App() {
   const handleMouseLeave = () => {
     setHeartFilled(false);
   };
+
+  const [duration, setDuration] = useState({ months: 0, days: 0 });
+
+  useEffect(() => {
+    const calculateDuration = () => {
+      const startDate = new Date('2024-11-05');
+      const currentDate = new Date();
+      
+      let months = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
+      months += currentDate.getMonth() - startDate.getMonth();
+      
+      const lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+      let days = currentDate.getDate() - startDate.getDate();
+      
+      if (days < 0) {
+        months--;
+        days += lastDayOfMonth;
+      }
+
+      setDuration({ months, days });
+    };
+
+    calculateDuration();
+    const timer = setInterval(calculateDuration, 1000 * 60 * 60 * 24); // Update daily
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="min-h-screen bg-rose-50">
@@ -70,6 +98,13 @@ function App() {
               <p className="text-2xl sm:text-3xl text-rose-600 font-light mb-4">Nossa História de Amor</p>
               <p className="text-lg sm:text-xl text-gray-600 mb-2">Namorando desde</p>
               <p className="text-2xl sm:text-3xl font-bold text-rose-600 mb-6 sm:mb-8">05/11/2024</p>
+
+              <Clock className="h-5 w-5 mr-2" />
+              <div className="bg-white bg-opacity-20 rounded-lg px-6 py-3">
+                  <p className="text-xl">
+                    {duration.months} meses e {duration.days} dias de amor
+                  </p>
+                </div>
               
               {/* Hero Image */}
               <div className="relative rounded-2xl overflow-hidden mb-8 sm:mb-12 shadow-xl">
