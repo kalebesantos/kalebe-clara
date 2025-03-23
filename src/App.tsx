@@ -112,6 +112,7 @@ function App() {
                   className="w-full h-[300px] sm:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center p-6 sm:p-8">
+                <br/>
                   <p className="text-white text-lg sm:text-xl font-light">Nosso amor cresce a cada dia</p>
                 </div>
               </div>
