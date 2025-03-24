@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .menu-text {
+      display: none; /* Esconde os textos */
+    }
+
+    #menu-item {
+      display: flex;
+      align-items: center;
+    }
+    
+    #menu-item svg {
+      margin: 2px;
+      margin-bottom: 0;
+    }
+}

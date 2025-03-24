@@ -5,6 +5,7 @@ import Gallery from './components/Gallery';
 import Declaration from './components/Declaration';
 import Flowers from './components/Flowers';
 import Videos from './components/Videos';
+import './global.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -57,30 +58,34 @@ function App() {
               <Heart className="w-6 h-6 fill-rose-600" /> Kalebe & Clara
             </button>
             <div className="flex gap-4 sm:gap-6">
-              <button 
+              <button  
+                id='menu-item'
                 onClick={() => setActiveSection('gallery')}
                 className={`flex items-center gap-1 ${activeSection === 'gallery' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
               >
-                <Camera className="w-4 h-4" /> Galeria
+                <Camera className="w-4 h-4" /> <span className="menu-text">Galeria</span>
               </button>
-              <button 
+              <button  
+                id='menu-item'
                 onClick={() => setActiveSection('flowers')}
                 className={`flex items-center gap-1 ${activeSection === 'flowers' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
               >
-                <Flower className="w-4 h-4" /> Flores
+                <Flower className="w-4 h-4" /> <span className="menu-text">Flores</span>
               </button>
-              <button 
+              <button  
+                id='menu-item'
                 onClick={() => setActiveSection('declaration')}
                 className={`flex items-center gap-1 ${activeSection === 'declaration' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
               >
-                <MessageCircleHeart className="w-4 h-4" /> Declaração
+                <MessageCircleHeart className="w-4 h-4" /> <span className="menu-text">Declaração</span>
               </button>
 
               <button 
+                id='menu-item'
                 onClick={() => setActiveSection('videos')}
                 className={`flex items-center gap-1 ${activeSection === 'videos' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
               >
-                <Video className="w-4 h-4" /> Videos
+                <Video className="w-4 h-4" /> <span className="menu-text">Videos</span>
               </button>
             </div>
           </div>
