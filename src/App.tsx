@@ -1,10 +1,12 @@
 //import React, { useState } from 'react';
 import { useState, useEffect } from 'react';
-import { Heart, ChevronRight, Camera, MessageCircleHeart, Flower, Video , Clock} from 'lucide-react';
+import { Heart, ChevronRight, Camera, MessageCircleHeart, Flower, Video , Calendar, LucideMessageSquareHeart} from 'lucide-react';
 import Gallery from './components/Gallery';
 import Declaration from './components/Declaration';
 import Flowers from './components/Flowers';
 import Videos from './components/Videos';
+import Relation from './components/Relation';
+import AbraQuando from './components/AbraQuando';
 import './global.css';
 
 function App() {
@@ -87,6 +89,22 @@ function App() {
               >
                 <Video className="w-4 h-4" /> <span className="menu-text">Videos</span>
               </button>
+
+              <button 
+                id='menu-item'
+                onClick={() => setActiveSection('relation')}
+                className={`flex items-center gap-1 ${activeSection === 'relation' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
+              >
+                <Calendar className="w-4 h-4" /> <span className="menu-text">Calendario</span>
+              </button>
+
+              <button 
+                id='menu-item'
+                onClick={() => setActiveSection('mesage')}
+                className={`flex items-center gap-1 ${activeSection === 'relation' ? 'text-rose-600' : 'text-gray-600'} hover:text-rose-600 transition-colors text-sm sm:text-base`}
+              >
+                <LucideMessageSquareHeart className="w-4 h-4" /> <span className="menu-text">Mensagem</span>
+              </button>
             </div>
           </div>
         </div>
@@ -135,6 +153,9 @@ function App() {
         {activeSection === 'flowers' && <Flowers />}
         {activeSection === 'declaration' && <Declaration />}
         {activeSection === 'videos' && <Videos />}
+        {activeSection === 'relation' && <Relation />}
+        {activeSection === 'mesage' && <AbraQuando />}
+
       </main>
 
       {/* Footer */}
@@ -153,6 +174,6 @@ function App() {
         </footer>
     </div>
   );
-}
+};
 
 export default App;
