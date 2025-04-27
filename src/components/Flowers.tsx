@@ -71,7 +71,7 @@ function Flowers() {
             onClick={() => setSelectedPhoto(null)}
           >
             <img 
-              src= "/public/photos/flowers/01.JPEG"
+              src= {selectedPhoto}
               alt="Full size" 
               className="max-w-full max-h-[90vh] object-contain rounded-lg"
             />
