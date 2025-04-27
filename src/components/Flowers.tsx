@@ -21,6 +21,10 @@ const flowers = [
   {
     url: "/photos/flowers/05 11-03-25.png",
     caption: "11/03/25"
+  },
+  {
+    url: "/photos/flowers/06 23-04-2025.png",
+    caption: "23/04/25"
   }
 ];
 
