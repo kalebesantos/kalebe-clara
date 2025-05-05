@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css'; // Certifique-se de ter o Tailwind configurad
 moment.locale('pt-br');
 
 function Relation() {
-  const startDate = moment('2024-11-04', 'YYYY-MM-DD');
+  const startDate = moment('2024-11-03', 'YYYY-MM-DD');
   const [timeDiff, setTimeDiff] = useState(getTimeDiff(startDate));
 
   useEffect(() => {
