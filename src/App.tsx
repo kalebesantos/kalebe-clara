@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     const calculateDuration = () => {
-      const startDate = new Date('2024-11-05');
+      const startDate = new Date('2024-11-06');
       const currentDate = new Date();
       
       let months = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
